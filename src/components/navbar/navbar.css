@@ -1,0 +1,11 @@
+.navbar-nav .nav-item.active .nav-link {
+  color: #ea580c;
+}
+.navbar-nav .nav-item .nav-link {
+  color: black;
+  transition: color 0.4s ease-in-out;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ea580c;
+} 
+
