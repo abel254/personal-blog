@@ -1,0 +1,48 @@
+header{
+    background-color: black;
+    width: 100%;
+}
+.container{
+    height: 2.7em;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+form{
+    height: 100%;
+}
+.search{
+    height: inherit;
+    margin-top: 1px;
+}
+header svg{
+    color: white;
+}
+.search svg{
+    position: absolute;
+    color: gray;
+}
+.search input{
+    border: none;
+    outline: none;
+    background-color: black;
+    caret-color: white;
+    height: 100%;
+    border-bottom: 1px solid white;
+    width: 12em;
+    color: white;
+}
+.search:hover{
+    transform: translateY(-1px);
+}
+.search:hover svg{
+    color: white;
+}
+.search input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.links a{
+    margin-right: 1.5em;
+}
