@@ -1,0 +1,58 @@
+main{
+    margin-top: 6.5em;
+}
+.subscribe{
+    background-color: #FDEDEC;
+    padding: 4.5em 2.5em;
+    
+}
+.followup{
+    padding: 2em;
+    background-color: #CD6155;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.followup form{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.followup h1{
+    color: white;
+    margin: .7em auto;
+    width: 80%;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group label{
+    color: white;
+    font-weight: bold;
+}
+.form-group label::after {
+    content: "*";
+    color: white;
+    margin-left: 4px;
+    font-weight: bold;
+  }
+  .form-group input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+  }
+  form button{
+    margin: 1.5em auto;
+    color: #CD6155;
+    padding: .5em 3em;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
