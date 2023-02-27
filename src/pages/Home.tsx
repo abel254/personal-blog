@@ -1,19 +1,14 @@
-import React from 'react'
-import Banner from '../components/banner/Banner'
+import React from "react";
+import Banner from "../components/banner/Banner";
+import MainComponent from "../components/main/Main";
 
 function Home() {
   return (
     <>
-    <Banner/>
-    <div className='container'>
-      <div className="ms-5">
-      
-      </div>
-      
-    </div>
+      <Banner />
+      <MainComponent />
     </>
-    
-  )
+  );
 }
 
-export default Home
+export default Home;
