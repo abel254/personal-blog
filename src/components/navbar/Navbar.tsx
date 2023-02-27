@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <div className="container">
+    <div className="nav-component">
+    <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light ms-5">
           <a className="navbar-brand fs-2 fw-bold" href="/">
             Turning Heads
@@ -46,7 +47,11 @@ function Navbar() {
             </ul>
           </div>
         </nav>
-      </div>
+        </div>
+       
+    </div>
+     
+     
     </>
   );
 }
