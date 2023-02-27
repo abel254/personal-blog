@@ -8,4 +8,10 @@
 .navbar-nav .nav-item .nav-link:hover {
   color: #ea580c;
 } 
-
+.nav-component{
+  position: fixed;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
