@@ -1,6 +1,19 @@
 main{
     margin-top: 6.5em;
 }
+.blogs button{
+    border: none;
+    margin: 1em 0;
+    padding: 1em 3em;
+    outline: 0;
+    color: white;
+    background-color: #CD6155;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.blogs button:hover {
+    background-color: black;
+}
 .blog-component{
     margin-bottom: 2em;
 }

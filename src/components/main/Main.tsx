@@ -24,6 +24,7 @@ function mainComponent() {
                       ))
                     }
                     
+                    <button>All Posts</button>
                 </div>
               </div>
               <div className="col-5">
