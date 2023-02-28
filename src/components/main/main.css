@@ -1,6 +1,9 @@
 main{
     margin-top: 6.5em;
 }
+.blog-component{
+    margin-bottom: 2em;
+}
 .subscribe{
     background-color: #FDEDEC;
     padding: 4.5em 2.5em;
