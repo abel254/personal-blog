@@ -1,0 +1,31 @@
+.blog-container{
+    height: 57.6vh;
+    width: 92%;
+    border: 1px solid #CCD1D1;
+    display: flex;
+}
+.info{
+    margin: 2.3em;
+}
+.date-time{
+    align-items: center;
+}
+.date, .time{
+    font-size: .8rem;
+    margin: 0;
+    padding: 0;
+}
+.info h4{
+    font-weight: bold;
+}
+.info .description{
+   letter-spacing: .07em;
+}
+.info-link{
+    padding-bottom: 2em;
+}
+.info-link:hover{
+    color: #CD6155;
+    cursor: pointer;
+   
+}

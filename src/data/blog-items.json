@@ -5,7 +5,7 @@
         "time": 2,
         "title": "Transform your winter blues into winter creativity",
         "description": "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and",
-        "imgUrl": "../../img/blog1.webp"
+        "image": "../img/blog1.webp"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "time": 2,
         "title": "5 reasons to wake up at 5am",
         "description": "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and",
-        "imgUrl": "../../img/blog2.webp"
+        "image": "../img/blog2.webp"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "time": 2,
         "title": "How decluttering changed my life",
         "description": "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and",
-        "imgUrl": "../../img/blog3.webp"
+        "image": "../img/blog3.webp"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "time": 2,
         "title": "The things we carry, and what we can let go of",
         "description": "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and",
-        "imgUrl": "../../img/blog4.webp"
+        "image": "../img/blog4.webp"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "time": 2,
         "title": "When expecting, expect the unexpected",
         "description": "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and",
-        "imgUrl": "../../img/blog5.webp"
+        "image": "../img/blog5.webp"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "time": 2,
         "title": "Surprising discoveries during walking tours",
         "description": "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and",
-        "imgUrl": "../../img/blog6.webp"
+        "image": "../img/blog6.webp"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "time": 2,
         "title": "Join the re-commerce revolution",
         "description": "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and",
-        "imgUrl": "../../img/blog7.webp"
+        "image": "../img/blog7.webp"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "time": 2,
         "title": "Starting fresh: New Year resolutions",
         "description": "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and",
-        "imgUrl": "../../img/blog8.webp"
+        "image": "../img/blog8.webp"
     },
     {
         "id": 9,
@@ -69,6 +69,6 @@
         "time": 2,
         "title": "Top street markets in the Middle East",
         "description": "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and",
-        "imgUrl": "../../img/blog9.webp"
+        "image": "../img/blog9.webp"
     }
 ]
