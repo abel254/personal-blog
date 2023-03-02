@@ -3,9 +3,9 @@ import './FooterComponent.css'
 
 function FooterComponent() {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <footer>
+      <h6>&copy; 2023 by Turning Heads. Powered and secured by Turning Points</h6>
+    </footer>
   )
 }
 
