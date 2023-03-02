@@ -1,6 +1,9 @@
 main{
     margin-top: 6.5em;
 }
+.main-container{
+    margin: 0 8.5%;
+}
 .blogs button{
     border: none;
     margin: 1em 0;

@@ -7,6 +7,8 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import MyBlog from './pages/MyBlog';
 import AboutMe from './pages/AboutMe';
+import ResponseForm from './components/responseForm/ResponseForm';
+import FooterComponent from './components/footer/FooterComponent';
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
         <Route path='/myblog' element={<MyBlog/>}></Route>
         <Route path='/about' element={<AboutMe/>}></Route>
       </Routes> 
+
+      <ResponseForm/>
+      <FooterComponent/>
 
     </div>
   );
