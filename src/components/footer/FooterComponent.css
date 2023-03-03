@@ -1,6 +1,6 @@
 footer{
     height: 4.3em;
-    background-color: #CD6155;
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;

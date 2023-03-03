@@ -4,8 +4,8 @@ import "./ResponseForm.css";
 
 function ResponseForm() {
   return (
-
-    <div className="response-form">
+    <section id="responseform">
+       <div className="response-form">
       <h1>Let me know what's on your mind</h1>
       <Col className="form-container offset-lg-3" lg={6}>
         <Row className="form-elements">
@@ -37,6 +37,7 @@ function ResponseForm() {
         <button>Submit</button>
       </Col>
     </div>
+    </section>
   );
 }
 

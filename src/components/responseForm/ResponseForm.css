@@ -30,11 +30,15 @@
     margin: 2em auto;
     padding: .6em 3em;
     font-size: 1.1rem;
-    background-color: #CD6155;
+    background-color: var(--primary-color);
     border: none;
     outline: none;
     color: white;
     font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.form-container button:hover{
+    background-color: black;
 }
 .form-container input{
     color: #272929;
@@ -44,7 +48,7 @@
     font-size: 1.07rem;
 }
 .form-container input:hover{
-    border-bottom: 2px solid #CD6155;
+    border-bottom: 2px solid var(--primary-color);
 }
 .form-container input:focus{
     border-bottom: 2px solid black;
@@ -64,7 +68,7 @@ textarea{
     color: #272929;
 }
 textarea:hover{
-    border-bottom: 2px solid #CD6155;
+    border-bottom: 2px solid var(--primary-color);
 }
 textarea:focus{
     outline: none;

@@ -4,3 +4,7 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+
+:root{
+    --primary-color: #CD6155;
+}

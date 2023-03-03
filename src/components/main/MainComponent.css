@@ -10,7 +10,7 @@ main{
     padding: 1em 3em;
     outline: 0;
     color: white;
-    background-color: #CD6155;
+    background-color: var(--primary-color);
     font-weight: bold;
     transition: all .3s ease-in-out;
 }
@@ -27,7 +27,7 @@ main{
 }
 .followup{
     padding: 2em;
-    background-color: #CD6155;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,13 +65,18 @@ main{
     border-bottom: 2px solid white;
     color: white;
   }
-  form button{
+ .subscribe form button{
     margin: 1.5em auto;
-    color: #CD6155;
+    color: var(--primary-color);
     padding: .5em 3em;
     border: none;
     outline: none;
     font-size: 1.1rem;
     font-weight: bold;
+    transition: all .3s ease-in-out;
+  }
+  .subscribe form button:hover{
+    background-color: black;
+    color: white;
   }
   
