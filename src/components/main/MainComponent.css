@@ -1,12 +1,13 @@
 main{
-    margin-top: 6.5em;
+    margin-top: 4em;
 }
 .main-container{
     margin: 0 8.5%;
+    margin-left: 12%;
 }
-.blogs button{
+.blogs-button button{
     border: none;
-    margin: 1em 0;
+    margin: 1em 0 3em 0;
     padding: 1em 3em;
     outline: 0;
     color: white;
@@ -14,7 +15,7 @@ main{
     font-weight: bold;
     transition: all .3s ease-in-out;
 }
-.blogs button:hover {
+.blogs-button button:hover {
     background-color: black;
 }
 .blog-component{
@@ -78,5 +79,21 @@ main{
   .subscribe form button:hover{
     background-color: black;
     color: white;
+  }
+
+  @media screen and (max-width: 985px){
+    .blogs-button{
+        display: flex;
+        justify-content: center;
+    }
+    .main-container{
+        margin: 0 18%;
+    }
+  }
+  @media screen and (max-width: 767px){
+    .main-container{
+      margin: 0 2%;
+      margin-left: 6%;
+    }
   }
   

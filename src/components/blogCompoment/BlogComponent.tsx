@@ -23,7 +23,7 @@ function BlogComponent({
       <Row className="blog-row">
         <Col xs={12} md={6}>
           <div className="image">
-            <img src={image} alt="blogimage" />
+            <img src={image} alt="blogimage" className="img-fluid" />
           </div>
         </Col>
         <Col xs={12} md={6}>

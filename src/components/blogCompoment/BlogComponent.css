@@ -5,19 +5,22 @@
   height: 57.6vh;
 }
 .blog-container:hover{
-    
+    cursor: pointer;
 }
-.blog-row {
+.blog-row{
   height: 100%;
 }
-.blog-container .image {
-  width: 100%;
+.blog-row .image{
   height: 100%;
 }
-.blog-container .image img {
-  width: 100%;
+.blog-row .image img{
   height: 100%;
-  object-fit: cover;
+}
+.blog-container:hover .info h4{
+  color: var(--primary-color);
+}
+.blog-container:hover .info .description{
+  color: var(--primary-color);
 }
 .info {
   margin: 2.3em 0 0 1em;
@@ -37,4 +40,24 @@
 }
 .info .description {
   letter-spacing: 0.07em;
+}
+
+
+@media screen and (max-width: 767px){
+  .blog-container{
+    height: 70vh;
+    width: 100%;
+  }
+ .blog-row .image{
+  height: 13em;
+ }
+ .blog-row .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+ }
+ .blog-row .info{
+  width: 70%;
+ }
+
 }
