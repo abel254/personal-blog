@@ -21,12 +21,12 @@ function BlogComponent({
   return (
     <section className="blog-container">
       <Row className="blog-row">
-        <Col lg={6}>
+        <Col xs={12} md={6}>
           <div className="image">
             <img src={image} alt="blogimage" />
           </div>
         </Col>
-        <Col lg={6}>
+        <Col xs={12} md={6}>
           <div className="info">
             <div className="date-time d-flex mb-4">
               <p className="date me-1">{date}</p>

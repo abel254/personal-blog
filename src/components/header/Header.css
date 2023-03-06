@@ -19,7 +19,6 @@ form{
 }
 .search{
     height: inherit;
-    margin-top: 1px;
 }
 header svg{
     color: white;
@@ -34,12 +33,11 @@ header svg{
     background-color: black;
     caret-color: white;
     height: 100%;
-    border-bottom: 1px solid white;
     width: 12em;
     color: white;
 }
 .search:hover{
-    transform: translateY(-1px);
+    border-bottom: 2px solid white;
 }
 .search:hover svg{
     color: white;

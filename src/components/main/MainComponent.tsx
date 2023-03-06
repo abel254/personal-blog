@@ -2,6 +2,7 @@ import React from "react";
 import BlogComponent from "../blogCompoment/BlogComponent";
 import './MainComponent.css'
 import blogItems from "../../data/blog-items.json"
+import { Col, Row } from "react-bootstrap";
 
 
 function mainComponent() {
@@ -11,12 +12,13 @@ function mainComponent() {
 
   return (
      <>
-       <main>
+      <section id="main">
+      <main>
       <div className="main-container">
            <div className="main-content ms-5">
-             <div className="row">
-               <div className="col-7">
-                 <div className="blogs">
+             <Row>
+              <Col xs={12} lg={7}>
+              <div className="blogs">
                      {
                        slicedBlogItems.map((item)=>(
                          <div className="blog-component" key={item.id}>
@@ -27,9 +29,9 @@ function mainComponent() {
                     
                      <button>All Posts</button>
                  </div>
-               </div>
-               <div className="col-5">
-                 <div className="subscribe">
+              </Col>
+              <Col xs={12} lg={5}>
+              <div className="subscribe">
                    <div className="followup ">
                      <h1 className="fw-bold">Let the posts come to you.</h1>
                      <form>
@@ -42,11 +44,12 @@ function mainComponent() {
                    </div>
                    <div className="instagram"></div>
                  </div>
-               </div>
-             </div>
+              </Col>
+             </Row>
            </div>
          </div>
        </main>
+      </section>
      </>
     
   );
