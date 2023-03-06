@@ -1,13 +1,4 @@
-/* .navbar-nav .nav-item.active .nav-link {
-  color: var(--primary-color);
-}
-.navbar-nav .nav-item .nav-link {
-  color: black;
-  transition: color 0.4s ease-in-out;
-}
-.navbar-nav .nav-item .nav-link:hover {
-  color: var(--primary-color);
-}  */
+
 .nav-component{
   position: fixed;
     top: 3em;
@@ -15,6 +6,12 @@
     width: 100%;
     z-index: 999;
 }
-nav.navbar .navbar-nav .nav-link.navbar-link{
+.nav-link{
   color: black;
+}
+.nav-link:hover, .nav-link.active{
+  color: var(--primary-color)
+}
+.nav-link.active{
+  color: var(--primary-color)
 }

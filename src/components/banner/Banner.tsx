@@ -12,7 +12,7 @@ function Banner() {
               <img src="/img/banner1.webp" alt="banner1" />
             </div>
           </Col>
-          <Col>
+          <Col xs={12} md={4}>
             <div className="image">
               <img src="/img/banner2.webp" alt="banner2" />
             </div>
