@@ -6,8 +6,8 @@ function Banner() {
   return (
     <>
       <div className="banner">
-        <Row className="flex-nowrap">
-          <Col>
+        <Row className="flex-nowrap gx-2">
+          <Col >
             <div className="image">
               <img src="/img/banner1.webp" alt="banner1" />
             </div>
