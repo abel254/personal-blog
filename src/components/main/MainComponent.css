@@ -66,8 +66,12 @@ main{
     border-bottom: 2px solid white;
     color: white;
   }
+  .subscribe-button{
+    display: flex;
+    justify-content: center;
+  }
  .subscribe form button{
-    margin: 1.5em auto;
+    margin-top: 1.5em;
     color: var(--primary-color);
     padding: .5em 3em;
     border: none;
@@ -95,5 +99,9 @@ main{
       margin: 0 2%;
       margin-left: 6%;
     }
+    main{
+      margin-top: 0;
+    }
   }
+
   
