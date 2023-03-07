@@ -55,6 +55,12 @@ header svg{
         position: static;
     }
     .container{
-        margin: 0;
+        margin-left: 0;
+    }
+    .links a{
+        margin-right: .7em;
+    }
+    .search input{
+        width: 10em;
     }
 }
