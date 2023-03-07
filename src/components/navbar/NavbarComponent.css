@@ -15,3 +15,10 @@
 .nav-link.active{
   color: var(--primary-color)
 }
+
+@media screen and (max-width: 480px) {
+  .nav-component{
+      position: static;
+      margin-top: 1em;
+  }
+}

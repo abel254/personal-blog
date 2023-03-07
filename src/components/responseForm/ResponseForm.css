@@ -14,7 +14,7 @@
     color: black;
 }
 .form-container{
-  
+    padding: 0 2em;
     margin-top: 6em;
     display: flex;
     flex-direction: column;

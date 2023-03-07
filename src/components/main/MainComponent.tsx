@@ -15,7 +15,7 @@ function mainComponent() {
             <Row>
               <Col xs={12} lg={7}>
                 <Row>
-                  <Col  xs={12}>
+                  <Col xs={12}>
                     <div className="blogs">
                       {slicedBlogItems.map((item) => (
                         <div className="blog-component" key={item.id}>
@@ -24,7 +24,7 @@ function mainComponent() {
                       ))}
                     </div>
                   </Col>
-                  <Col  xs={12} className='blogs-button'>
+                  <Col xs={12} className="blogs-button">
                     <button>All Posts</button>
                   </Col>
                 </Row>
@@ -38,7 +38,9 @@ function mainComponent() {
                         <label>Email</label>
                         <input type="email" />
                       </div>
-                      <button>Subscribe</button>
+                      <div className="subscribe-button">
+                        <button>Subscribe</button>
+                      </div>
                     </form>
                   </div>
                   <div className="instagram">{/* Insta Grid  */}</div>
