@@ -1,0 +1,69 @@
+.about-me {
+  margin-top: 12em;
+}
+.content {
+  margin: 0 8.5%;
+  margin-left: 12%;
+  background-color: #fdedec;
+  width: 67%;
+  padding: 2em 3.8em;
+  position: relative;
+}
+.content .info {
+  width: 100%;
+}
+.content .info h1 {
+  font-weight: bold;
+  color: black;
+  font-size: 2.7rem;
+  width: 80%;
+}
+.content .info p {
+  letter-spacing: 0.06rem;
+  line-height: 1.8;
+  margin-bottom: 3em;
+}
+.profile-image {
+  width: 28em;
+  height: 21em;
+  transform: translateX(3em); 
+  object-fit: fill;
+  animation: leftright 2s linear ;
+}
+.profile-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes leftright{
+    0%{
+        transform: translateX(5em);
+    }
+    100%{
+        transform: translateX(3em);
+    }
+}
+
+@media screen and (max-width: 991px) {
+  .about-me {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+  }
+  .content {
+    margin: 0 2%;
+    width: 93%;
+    margin-left: 0;
+    padding: 0 0.8em;
+  }
+  .profile-image {
+    width: 100%;
+    height: 20em;
+    transform: translateX(0);
+    animation: none;
+  }
+  .content .info h1 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+}
