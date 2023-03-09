@@ -1,15 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./BlogComponent.css";
+import { BlogComponentProps } from "../../../props/Blog.type";
 
-type BlogComponentProps = {
-  id: number;
-  date: string;
-  time: number;
-  title: string;
-  description: string;
-  image: string;
-};
 
 function BlogComponent({
   date,

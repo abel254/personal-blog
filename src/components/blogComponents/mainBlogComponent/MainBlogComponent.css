@@ -1,0 +1,37 @@
+.blog {
+  border: 1px solid #ccd1d1;
+}
+.blog .blog-image {
+  width: 100%;
+  height: 100%;
+}
+.blog .blog-image img {
+  width: 100%;
+  height: 100%;
+}
+.blog-info {
+  padding: 1em 1.5em;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.date,
+.time {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+.info-content h4 {
+  font-weight: bold;
+}
+.info-content .description {
+  letter-spacing: 0.07em;
+}
+
+@media screen and (max-width: 480px){
+    .blog {
+        border: none;
+        border-bottom: 1px solid #ccd1d1;
+      }
+}

@@ -1,10 +1,9 @@
 import React from 'react'
+import BlogPage from '../components/blogComponents/blogPage/BlogPage'
 
 function MyBlog() {
   return (
-    <div className='mt-5'>
-      My Blog
-    </div>
+      <BlogPage/>
   )
 }
 
