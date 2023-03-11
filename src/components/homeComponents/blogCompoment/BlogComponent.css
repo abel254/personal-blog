@@ -7,6 +7,15 @@
 .blog-container:hover{
     cursor: pointer;
 }
+.blog-container button{
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: start;
+}
+.blog-container .links{
+  text-decoration: none;
+}
 .blog-row{
   height: 100%;
 }
@@ -36,10 +45,12 @@
   padding: 0;
 }
 .info h4 {
-  font-weight: bold;
+  font-weight: 600;
+  color: black;
 }
 .info .description {
   letter-spacing: 0.07em;
+  color: var(--p-color);
 }
 
 

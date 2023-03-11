@@ -1,6 +1,14 @@
 .blog {
   border: 1px solid #ccd1d1;
 }
+.blog button{
+  border: none;
+  background-color: transparent;
+  text-align: start;
+}
+.blog .links{
+  text-decoration: none;
+}
 .blog .blog-image {
   width: 100%;
   height: 100%;
@@ -16,17 +24,23 @@
   display: flex;
   justify-content: space-between;
 }
+.top svg{
+  color: var(--p-color);
+}
 .date,
 .time {
   font-size: 0.8rem;
   margin: 0;
   padding: 0;
+  color: var(--p-color);
 }
 .info-content h4 {
   font-weight: bold;
+  color: black;
 }
 .info-content .description {
   letter-spacing: 0.07em;
+  color: var(--p-color);
 }
 
 @media screen and (max-width: 480px){
