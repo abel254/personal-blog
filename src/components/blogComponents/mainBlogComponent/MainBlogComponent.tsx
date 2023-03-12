@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom'
 import { useBlogsContext } from '../../../context/BlogsContext'
 
 
-function MainBlogComponent({id, date, time, title, description, image}: BlogComponentProps) {
+function MainBlogComponent({id, date, time, title, introone, image}: BlogComponentProps) {
 
     const {addBlog} = useBlogsContext()
+
+    const newDescription = introone.slice(0, 90)
 
   return (
       <Col sm={12} md={6} lg={4} className='mb-4'>
@@ -30,7 +32,7 @@ function MainBlogComponent({id, date, time, title, description, image}: BlogComp
             </div>
             <div className="info-content">
                 <h4>{title}</h4>
-                <p className="description">{description}...</p>
+                <p className="description">{newDescription}...</p>
             </div>
         </div>
        </Link>

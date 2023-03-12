@@ -11,7 +11,7 @@ function BlogComponent({
   date,
   time,
   title,
-  description,
+  introone,
   image,
 }: BlogComponentProps) {
 
@@ -20,9 +20,9 @@ function BlogComponent({
   const insertItems = () => {
     removeFromBlog(id)
     addBlog(Number(id))
-    console.log(id);
-    
   }
+
+  const newDescription = introone.slice(0, 90)
 
   return (
 
@@ -44,7 +44,7 @@ function BlogComponent({
           </div>
           <div>
             <h4>{title}</h4>
-            <p className="description">{description}...</p>
+            <p className="description">{newDescription}...</p>
           </div>
         </div>
       </Col>
