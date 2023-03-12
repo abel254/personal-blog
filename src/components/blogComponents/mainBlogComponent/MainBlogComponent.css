@@ -1,6 +1,12 @@
 .blog {
   border: 1px solid #ccd1d1;
 }
+.blog:hover .info-content h4{
+  color: var(--primary-color);
+}
+.blog:hover .info-content .description{
+  color: var(--primary-color);
+}
 .blog button{
   border: none;
   background-color: transparent;

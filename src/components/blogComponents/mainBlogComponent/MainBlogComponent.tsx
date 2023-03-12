@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import { BlogComponentProps } from '../../../props/Blog.type'
+import { BlogComponentProps } from '../../../propsTypes/Blog.type'
 import './MainBlogComponent.css'
 import {CiMenuKebab} from 'react-icons/ci'
 import { Link } from 'react-router-dom'

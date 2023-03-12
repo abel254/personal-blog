@@ -1,0 +1,34 @@
+.post-container:hover{
+    cursor: pointer;
+}
+.post-container:hover .title h5{
+    color: var(--primary-color);
+}
+.post-container .post-image{
+    width: 100%;
+    height: 10.8em;
+}
+.post-container .post-image img{
+    width: 100%;
+    height: 100%;
+}
+.post-container .title{
+    padding: 1.5em;
+}
+.post-container h5{
+    font-weight: bold;
+    color: black;
+}
+
+@media screen and (max-width: 480px){
+    .post-container{
+        padding: 0 1em;
+    }
+    .post-container .title{
+        padding: 0;
+    }
+    .post-container .title h5{
+        font-size: 1.5rem;
+        margin-bottom: 1.5em;
+    }
+}
