@@ -1,4 +1,5 @@
 import React from "react";
+import SingleBlog from "../components/blogComponents/singleBlog/SingleBlog";
 import { useBlogsContext } from "../context/BlogsContext";
 import bItems from "../data/blog-items.json";
 
@@ -17,14 +18,13 @@ function Blogs() {
   
 
   return (
-    <div className="mt-5">
-      <h3>Blogs</h3>
-
-      <h4>{item?.title}</h4>
+    <div>
+      <SingleBlog/>
+      {/* <h4>{item?.title}</h4>
       <img src={item?.image} alt="" />
       <p>{item?.date}</p>
       <p>{item?.time}</p>
-      <p>{item?.description}</p>
+      <p>{item?.description}</p> */}
     </div>
   );
 }

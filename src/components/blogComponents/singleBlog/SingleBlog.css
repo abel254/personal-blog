@@ -1,0 +1,211 @@
+
+.single-blog{
+    margin-top: 9em;
+    padding: 0 15%;
+}
+.single-blog .main-content{
+    margin-bottom: 2em;
+}
+.main-content .info-content{
+    padding-top: 5em;
+    padding-left: 2em;
+}
+.info-content .top{
+    display: flex;
+    align-items: center;
+    
+}
+.info-content .top .date-time{
+    display: flex;
+}
+.info-content .info{
+    margin-left: 0;
+    width: 100%;
+}
+.info-content .info h1{
+    font-weight: bold;
+    font-size: 2.7rem;
+    color: black;
+    margin-bottom: .5em;
+}
+.info-content .info .intro-one, .intro-two{
+    margin-bottom: 2em;
+}
+.info-content .info .image{
+    width: 100%;
+    height: 28em;
+    margin-bottom: 2em;
+}
+.info-content .info .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.info .subtitle{
+    margin-bottom: 2em;
+}
+.info h5{
+    font-weight: bold;
+    color: black;
+    font-size: 1.4rem;
+    margin-bottom: 1.5em;
+}
+.info .with-notes .notes{
+    border-left: 3px solid var(--primary-color);
+    padding: .1em .5em;
+    font-size: 1.36rem;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.social-links{
+    margin-bottom: 2em;
+    border-top: 1px solid gray;
+    margin-left: 2em;
+    padding-top: 1em;
+}
+.social-links svg{
+    margin-right: 1.2em;
+    font-size: 1.1rem;
+    color: black;
+
+}
+.social-links svg:hover{
+    cursor: pointer;
+    color:darkcyan;
+}
+
+.recent-blogs{
+    margin-top: 4.5em;
+}
+
+
+
+.aside{
+    margin-top: 11em;
+    margin-left: 3.5em;
+    background-color: #FDEDEC;
+    padding-bottom: 2em;
+}
+.aside-content{
+    padding: 2em;
+}
+.aside-image{
+    width: 100%;
+    height: 12em;
+    margin-bottom: 2.2em;
+}
+.aside-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aside-info h4{
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.aside-info p{
+    font-size: 1.2rem;
+}
+.aside-info button{
+    border: 1px solid black;
+    background-color: transparent;
+    padding: .5em 2em;
+    transition: all .3s ease-in-out;
+}
+.aside-info .links{
+    text-decoration: none;
+    color: black;
+}
+.aside-info button:hover .links{
+    color: white;
+}
+.aside-info button:hover{
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.aside-subscribe{
+    background-color: var(--primary-color);
+    margin: 1.2em;
+    padding: 1.5em;
+    padding-bottom: 4.5em;
+}
+.aside-subscribe h4{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 1em 0;
+}
+.aside-subscribe .form-group{
+    margin-bottom: 1.5em;
+}
+.aside-subscribe .form-group label{
+    font-weight: 400;
+}
+.aside-subscribe .form-group input:hover{
+    border-color: black;
+}
+.aside-subscribe .form-group input:focus{
+    border-color: black;
+}
+.aside-subscribe button{
+    padding: .5em 2em;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 auto;
+    border: none;
+    color: var(--primary-color);
+    transition: all .3s ease-in-out;
+}
+.aside-subscribe button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width: 991px) {
+   
+}
+
+@media screen and (max-width: 480px) {
+    .single-blog{
+        margin-top: 4em;
+        padding: 0 0;
+    }
+    .main-content h6{
+        display: none;
+    }
+    .main-content .info-content{
+        padding: 0 1.8em;
+    }
+    .date-time .date, .date-time .time{
+        font-size: 1.1rem;
+    }
+    .info-content .top{
+        padding-right: 1em;
+    }
+    .info-content .info h1{
+        font-size: 2.3rem;
+    }
+    .info-content .info p{
+        font-size: 1.25rem;
+    }
+    .main-content .info .notes p{
+        font-size: 1.7rem;
+    }
+    .info-content .info .image{
+        height: 17em;
+    }
+    .recent-blogs{
+        padding: 0 2em;
+    }
+
+    .aside{
+        
+        margin-left: 0;
+        margin: 10em 1em;
+    }
+}

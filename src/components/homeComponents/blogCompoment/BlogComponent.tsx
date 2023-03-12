@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./BlogComponent.css";
-import { BlogComponentProps } from "../../../props/Blog.type";
+import { BlogComponentProps } from "../../../propsTypes/Blog.type";
 import { Link } from "react-router-dom";
 import { useBlogsContext } from "../../../context/BlogsContext";
 
