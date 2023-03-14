@@ -31,7 +31,7 @@ function About() {
             </Col>
             <Col  md={5}>
               <div className="profile-image">
-                <img src="../img/profile-pic.jpg" alt="Profile pic" />
+                <img src="../img/profile.jpg" alt="Profile pic" />
               </div>
             </Col>
           </Row>
