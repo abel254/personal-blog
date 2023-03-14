@@ -8,9 +8,21 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import bItems from "../../../data/blog-items.json";
 import RecentPostsComponent from "../recentPosts/RecentPostsComponent";
+import { useBlogsContext } from "../../../context/BlogsContext";
 
 function SingleBlog() {
-  const selectedItems = bItems.slice(0, 2);
+  const recentItems = bItems.slice(0, 2);
+
+  const { blogItems } = useBlogsContext();
+
+  const itemId = blogItems.map((item) => item.id);
+  const id = Number(itemId.join(""));
+
+  const blogPageItems = bItems.find((item) => item.id === id);
+
+  if (blogPageItems === null) return null;
+
+  // const [date, time, title, introone, image, introtwo, subonetitle, subonenotes, subonedescription, subtwotitle, subtwonotes, subtwodescription, subthreetitle, subthreenotes, subthreedescription, subfourtitle, subfournotes, subfourdescription] = blogPageItems
 
   return (
     <>
@@ -23,93 +35,47 @@ function SingleBlog() {
               <div className="info-content">
                 <div className="top">
                   <div className="date-time">
-                    <p className="date me-1">Nov 29, 2022</p>
+                    <p className="date me-1">{blogPageItems?.date}</p>
                     <span>.</span>
-                    <p className="time ms-1">2 mins</p>
+                    <p className="time ms-1">{blogPageItems?.time} mins</p>
                   </div>
                   <CiMenuKebab />
                 </div>
                 <div className="info">
-                  <h1>Transform your winter blues into winter creativity</h1>
-                  <p className="intro-one">
-                    Create a blog post subtitle that summarizes your post in a
-                    few short, punchy sentences and entices your audience to
-                    continue reading.
-                  </p>
+                  <h1>{blogPageItems?.title}</h1>
+                  <p className="intro-one">{blogPageItems?.introone}</p>
                   <div className="image">
-                    <img src="../img/blog1.webp" alt="singleBlog image" />
+                    <img src={blogPageItems?.image} alt="singleBlog image" />
                   </div>
-                  <p className="intro-two">
-                    Welcome to your blog post. Use this space to connect with
-                    your readers and potential customers in a way that’s current
-                    and interesting. Think of it as an ongoing conversation
-                    where you can share updates about business, trends, news,
-                    and more.
-                  </p>
+                  <p className="intro-two">{blogPageItems?.introtwo}</p>
                   <div className="subtitle with-notes">
-                    <h5>Design with Ease</h5>
+                    <h5>{blogPageItems?.subonetitle}</h5>
                     <div className="notes">
-                      <p>
-                        “Do you have a design in mind for your blog? Whether you
-                        prefer a trendy postcard look or you’re going for a more
-                        editorial style blog - there’s a stunning layout for
-                        everyone.”
-                      </p>
+                      <p>“{blogPageItems?.subonenotes}”</p>
                     </div>
                     <p className="description">
-                      Every layout comes with the latest social features built
-                      in. Readers will be able to easily share posts on social
-                      networks like Facebook and Twitter, view how many people
-                      have liked a post, made comments and more. With Wix,
-                      building your online community has never been easier.
+                      {blogPageItems?.subonedescription}
                     </p>
                   </div>
                   <div className="subtitle no-notes">
-                    <h5>Create Relevant Content</h5>
+                    <h5>{blogPageItems?.subtwotitle}</h5>
                     <p className="description">
-                      You’ll be posting loads of engaging content, so be sure to
-                      keep your blog organized with Categories that also allow
-                      readers to explore more of what interests them. Each
-                      category of your blog has its own page that’s fully
-                      customizable. Add a catchy title, a brief description and
-                      a beautiful image to the category page header to truly
-                      make it your own. You can also add tags (#vacation #dream
-                      #summer) throughout your posts to reach more people, and
-                      help readers search for relevant content. Using hashtags
-                      can expand your post reach and help people find the
-                      content that matters to them. Go ahead, #hashtag away.
+                      {blogPageItems?.subtwodescription}
                     </p>
                   </div>
                   <div className="subtitle with-notes">
-                    <h5>Stun Your Readers</h5>
+                    <h5>{blogPageItems?.subthreetitle}</h5>
                     <div className="notes">
-                      <p>
-                        “Be original, show off your style, and tell your story.”
-                      </p>
+                      <p>“{blogPageItems?.subthreenotes}”</p>
                     </div>
                     <p className="description">
-                      Blogging gives your site a voice, so let your business’
-                      personality shine through. Are you a creative agency? Go
-                      wild with original blog posts about recent projects, cool
-                      inspirational ideas, or what your company culture is like.
-                      Add images, and videos to really spice it up, and pepper
-                      it with slang to keep readers interested. Are you a
-                      programmer? Stay on the more technical side by offering
-                      weekly tips, tricks, and hacks that show off your
-                      knowledge of the industry. No matter what type of business
-                      you have, one thing is for sure - blogging gives your
-                      business the opportunity to be heard in a way in a
-                      different and unconventional way.
+                      {blogPageItems?.subthreedescription}
                     </p>
                   </div>
                   <div className="subtitle no-notes">
-                    <h5>Get Inspired</h5>
+                    <h5>{blogPageItems?.subfourtitle}</h5>
                     <p className="description">
-                      To keep up with all things Wix, including website building
-                      tips and interesting articles, head over to the Wix Blog.
-                      You may even find yourself inspired to start crafting your
-                      own blog, adding unique content, and stunning images and
-                      videos. Start creating your own blog now. Good luck!
+                      {blogPageItems?.subfourdescription}
                     </p>
                   </div>
                 </div>
@@ -130,7 +96,7 @@ function SingleBlog() {
               </div>
               <div className="post-images">
                 <Row>
-                  {selectedItems.map((item) => {
+                  {recentItems.map((item) => {
                     return (
                       <Col xs={12} sm={6}>
                         <RecentPostsComponent {...item} />

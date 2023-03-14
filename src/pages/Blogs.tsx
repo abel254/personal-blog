@@ -13,8 +13,6 @@ function Blogs() {
   const item = bItems.find((item) => item.id === id);
 
   if(item === null) return null
-
-  console.log(blogItems);
   
 
   return (
