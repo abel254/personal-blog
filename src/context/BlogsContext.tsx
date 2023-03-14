@@ -1,4 +1,5 @@
 import React, { createContext, ReactNode, useContext, useState } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 type BlogsProviderProps = {
   children: ReactNode;
@@ -20,7 +21,7 @@ export function useBlogsContext() {
 }
 
 export function BlogsProvider({ children }: BlogsProviderProps) {
-  const [blogItems, setBlogItems] = useState<BlogItem[]>([]);
+  const [blogItems, setBlogItems] = useLocalStorage<BlogItem[]>("shopping-cart",[]);
 
   function addBlog(id: number) {
     setBlogItems([])
