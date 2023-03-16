@@ -112,7 +112,7 @@ function SingleBlog() {
             <div className="aside">
               <div className="aside-content">
                 <div className="aside-image">
-                  <img src="../img/profile-pic.jpg" alt="" />
+                  <img src="../img/profile.jpg" alt="" />
                 </div>
                 <div className="aside-info">
                   <h4>Hi, thanks for stopping by!</h4>
