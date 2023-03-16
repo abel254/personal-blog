@@ -1,3 +1,10 @@
+.recent-blogs button{
+    border: none;
+    background-color: transparent;
+}
+.recent-blogs .links{
+    text-decoration: none;
+}
 .post-container:hover{
     cursor: pointer;
 }

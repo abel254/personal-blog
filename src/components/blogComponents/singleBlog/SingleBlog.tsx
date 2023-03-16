@@ -26,7 +26,7 @@ function SingleBlog() {
 
   return (
     <>
-      <section className="single-blog">
+      <section className="single-blog" id="single-blogs">
         <Row className="gx-0">
           <Col xs={12} lg={8}>
             <div className="main-content">
