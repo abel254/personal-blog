@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavbarComponent.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 function NavbarComponent() {
@@ -22,19 +22,19 @@ function NavbarComponent() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
                 <Nav.Link href="#home">
-                  <Link className="nav-link fw-bold fs-6" to="/">
+                  <NavLink className="nav-link fw-bold fs-6" to="/">
                     Home
-                  </Link>
+                  </NavLink>
                 </Nav.Link>
                 <Nav.Link href="#myblog">
-                  <Link className="nav-link fw-bold fs-6" to="/myblog">
+                  <NavLink className="nav-link fw-bold fs-6" to="/myblog">
                     My Blog
-                  </Link>
+                  </NavLink>
                 </Nav.Link>
                 <Nav.Link href="#about">
-                  <Link className="nav-link fw-bold fs-6" to="/about">
+                  <NavLink className="nav-link fw-bold fs-6" to="/about">
                     About
-                  </Link>
+                  </NavLink>
                 </Nav.Link>
                 <Nav.Link href="#responseform" className="fw-bold fs-6">
                 <a className="nav-link fw-bold fs-6">

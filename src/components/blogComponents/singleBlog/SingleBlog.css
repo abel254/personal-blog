@@ -10,19 +10,19 @@
     padding-top: 5em;
     padding-left: 2em;
 }
-.info-content .top{
+.main-content .info-content .top{
     display: flex;
     align-items: center;
     
 }
-.info-content .top .date-time{
+.main-content .info-content .top .date-time{
     display: flex;
 }
-.info-content .info{
+.main-content .info-content .info{
     margin-left: 0;
     width: 100%;
 }
-.info-content .info h1{
+.main-content .info-content .info h1{
     font-weight: bold;
     font-size: 2.7rem;
     color: black;
@@ -31,21 +31,21 @@
 .info-content .info .intro-one, .intro-two{
     margin-bottom: 2em;
 }
-.info-content .info .image{
+.main-content .info-content .info .image{
     width: 100%;
     height: 28em;
     margin-bottom: 2em;
 }
-.info-content .info .image img{
+.main-content .info-content .info .image img{
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
 
-.info .subtitle{
+.main-content .info .subtitle{
     margin-bottom: 2em;
 }
-.info h5{
+.main-content .info h5{
     font-weight: bold;
     color: black;
     font-size: 1.4rem;
@@ -59,66 +59,66 @@
     margin-bottom: 1em;
 }
 
-.social-links{
+.single-blog .social-links{
     margin-bottom: 2em;
     border-top: 1px solid gray;
     margin-left: 2em;
     padding-top: 1em;
 }
-.social-links svg{
+.single-blog .social-links svg{
     margin-right: 1.2em;
     font-size: 1.1rem;
     color: black;
 
 }
-.social-links svg:hover{
+.single-blog .social-links svg:hover{
     cursor: pointer;
     color:darkcyan;
 }
 
-.recent-blogs{
+.single-blog .recent-blogs{
     margin-top: 4.5em;
 }
 
 
 
-.aside{
+.single-blog .aside{
     margin-top: 11em;
     margin-left: 3.5em;
     background-color: #FDEDEC;
     padding-bottom: 2em;
 }
-.aside-content{
+.aside .aside-content{
     padding: 2em;
 }
-.aside-image{
+.aside .aside-image{
     width: 100%;
     height: 12em;
     margin-bottom: 2.2em;
 }
-.aside-image img{
+.aside .aside-image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.aside-info h4{
+.aside .aside-info h4{
     font-weight: bold;
     margin-bottom: 1em;
 }
-.aside-info p{
+.aside .aside-info p{
     font-size: 1.2rem;
 }
-.aside-info button{
+.aside .aside-info button{
     border: 1px solid black;
     background-color: transparent;
     padding: .5em 2em;
     transition: all .3s ease-in-out;
 }
-.aside-info .links{
+.aside .aside-info .links{
     text-decoration: none;
     color: black;
 }
-.aside-info button:hover .links{
+.aside .aside-info button:hover .links{
     color: white;
 }
 .aside-info button:hover{

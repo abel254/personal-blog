@@ -9,11 +9,11 @@
 .nav-link{
   color: black;
 }
-.nav-link:hover, .nav-link.active{
+.nav-link:hover{
   color: var(--primary-color)
 }
-.nav-link.active{
-  color: var(--primary-color)
+.nav-component .active{
+  color: var(--primary-color) !important
 }
 
 @media screen and (max-width: 480px) {
