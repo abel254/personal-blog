@@ -16,9 +16,17 @@
   color: var(--primary-color) !important
 }
 
+
+
+
 @media screen and (max-width: 480px) {
   .nav-component{
       position: static;
       margin-top: 1em;
+  }
+
+  .offcanvas-max-width-600 {
+    width: 75%;
+    max-width: 550px;
   }
 }
