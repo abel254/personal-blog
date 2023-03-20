@@ -24,7 +24,10 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path='/myblog' element={<MyBlog/>}></Route>
         <Route path='/about' element={<AboutMe/>}></Route>
+        
         <Route path='/blogs' element={<Blogs/>}></Route>
+       
+        
       </Routes> 
 
       <ResponseForm/>

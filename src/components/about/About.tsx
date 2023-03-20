@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import "./About.css";
 
 function About() {
+
+  useLayoutEffect(()=>{
+    window.scrollTo(0, 0)
+  })
+
   return (
     <>
       <section className="about-me">
