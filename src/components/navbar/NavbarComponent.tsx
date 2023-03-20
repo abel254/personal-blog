@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./NavbarComponent.css";
 import { Link, NavLink } from "react-router-dom";
 import { Button, Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
+import {BiMenuAltRight} from 'react-icons/bi'
 
 function NavbarComponent() {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -73,15 +74,20 @@ function NavbarComponent() {
                 <a className="nav-link fw-bold fs-6">Contact</a>
               </Nav.Link>
             </Nav>
-            <Button variant="outline-primary" onClick={handleShowOffcanvas}>
-              Menu
-            </Button>
           </Navbar.Collapse>
+          <button className="offcanvas-button me-4" onClick={handleShowOffcanvas}>
+            <BiMenuAltRight/>
+          </button>
         </Navbar>
 
-        <Offcanvas show={showOffcanvas} onHide={handleCloseOffcanvas} placement="end" className="offcanvas-max-width-600">
+        <Offcanvas
+          show={showOffcanvas}
+          onHide={handleCloseOffcanvas}
+          placement="end"
+          className="offcanvas-max-width-600"
+        >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Menu</Offcanvas.Title>
+            <Offcanvas.Title>Turning Heads</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="flex-column">

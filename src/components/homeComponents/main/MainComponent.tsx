@@ -1,10 +1,12 @@
-import React from "react";
+
 import BlogComponent from "../blogCompoment/BlogComponent";
 import "./MainComponent.css";
 import blogItems from "../../../data/blog-items.json";
 import { Col, Row } from "react-bootstrap";
 
+
 function mainComponent() {
+
   let slicedBlogItems = blogItems.slice(0, 3);
 
   return (

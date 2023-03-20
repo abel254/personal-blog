@@ -1,5 +1,5 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React, { useLayoutEffect } from "react";
+import { Col, Row } from "react-bootstrap";
 import "./SingleBlog.css";
 import { CiMenuKebab } from "react-icons/ci";
 import { AiOutlineTwitter } from "react-icons/ai";
@@ -11,6 +11,11 @@ import RecentPostsComponent from "../recentPosts/RecentPostsComponent";
 import { useBlogsContext } from "../../../context/BlogsContext";
 
 function SingleBlog() {
+
+  useLayoutEffect(()=> {
+    window.scrollTo(0, 0)
+  })
+
   const recentItems = bItems.slice(0, 2);
 
   const { blogItems } = useBlogsContext();
@@ -22,7 +27,6 @@ function SingleBlog() {
 
   if (blogPageItems === null) return null;
 
-  // const [date, time, title, introone, image, introtwo, subonetitle, subonenotes, subonedescription, subtwotitle, subtwonotes, subtwodescription, subthreetitle, subthreenotes, subthreedescription, subfourtitle, subfournotes, subfourdescription] = blogPageItems
 
   return (
     <>

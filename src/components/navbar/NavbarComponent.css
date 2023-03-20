@@ -15,9 +15,22 @@
 .nav-component .active{
   color: var(--primary-color) !important
 }
+.offcanvas-button{
+  padding: .2em .5em;
+  background-color: transparent;
+  border: none;
+  visibility: hidden;
+}
+.offcanvas-button svg{
+  font-size: 2em;
+}
 
 
-
+@media screen and (max-width: 991px) {
+  .offcanvas-button{
+    visibility: visible;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .nav-component{
